@@ -51,6 +51,7 @@ Route::group(
         Route::get('cart',[\App\Http\Controllers\AddToCartController::class,'index'])->name('cart.index');
         Route::delete('cart/destroy/{id}',[\App\Http\Controllers\AddToCartController::class,'destroy'])->name('cart.destroy');
         Route::post('cart/update',[\App\Http\Controllers\AddToCartController::class,'update'])->name('cart.update');
+        Route::get('checkout/',[\App\Http\Controllers\CheckOutController::class,'index'])->name('checkout.index');
     });
 
 });

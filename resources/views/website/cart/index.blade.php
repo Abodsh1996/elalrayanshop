@@ -70,7 +70,7 @@
                     <h3 id="total">{{$total_price}}</h3>
                 </div>
                 <div class="col-4">
-                    <a href="#" class="btn btn-success ">{{trans('website_trans.checkout')}}</a>
+                    <a href="{{route('checkout.index')}}" class="btn btn-success ">{{trans('website_trans.checkout')}}</a>
                 </div>
             </div>
         </div>
